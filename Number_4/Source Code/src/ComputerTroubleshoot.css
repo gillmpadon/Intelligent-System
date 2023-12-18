@@ -1,0 +1,263 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+  }
+
+  
+.container {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  }
+
+.content{
+  height: 90%;
+  width: 90%;
+  max-width: 50em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn{
+  background-color: rgb(82, 102, 141);
+  border-radius: 8px;
+  transition: .5s ease;
+  color: white;
+  
+}
+
+.btn:hover{
+  opacity: 0.5;
+}
+
+.container-title{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 2em 0 2em 0; 
+  background-color: rgb(82, 102, 141);
+  border-radius: 8px;
+}
+
+.container-title h1{
+  color: white;
+  font-weight: bold;
+}
+
+.title-img{
+  width: 7em;
+  height: 7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-img img{
+  height: 7em;
+}
+
+.container-title img{
+  height: 5em;
+  width: 5em;
+}
+
+.guide{
+  width: 100%;
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .8em;
+  margin: 1em 0 1em 0;
+
+}
+
+.guide p{
+  padding: 1em 1em;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  border: 4px solid rgb(82, 102, 141);
+}
+
+.guide-content{
+  width: 100%;
+  margin-left: 1em;
+}
+
+
+.hardware-description p{
+  border: none;
+  text-align: left;
+  padding: 0;
+  padding-bottom: .5em ;
+  font-weight: bold;
+}
+
+.hardware-description span {
+  font-weight: bold;
+  color: rgb(57, 92, 160);
+  border: 2px solid rgb(57, 92, 160);
+  border-left: none;
+  background-color: none;
+  padding: .2em;
+}
+
+.hardware-description .hard{
+  background-color: rgb(57, 92, 160);
+  color: white;
+  
+}
+
+
+.guide img{
+  width: 10em;
+  height: 10em;
+  margin: 0;
+}
+
+.prompt{
+  text-align: left;
+  height: 5em;
+  width: 100%;
+  margin-top: .5em;
+}
+
+.prompt span{
+  color: rgb(57, 92, 160);
+  font-weight: bold;
+}
+
+.computer-hardware{
+    width: 90%;
+    padding: 1em 2.5em;
+    text-align: center;
+    cursor: pointer;
+    margin: 3em 1em;
+    border-radius: 8px;
+    background-color: rgb(82, 102, 141);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.computer-hardware img{
+  width: 5em;
+  height: 5em;
+}
+
+.computer-hardware:hover{
+  transform: scale(1.01);
+  transition: 0.5s;
+}
+
+.hardware-buttons{
+    width: 90%;
+    max-width: 40em;
+    display: flex;
+    justify-content: center;
+}
+
+.option-buttons{
+  display: flex;
+}
+
+.option{
+  padding: 1.5em 3.5em;
+  margin: 5em 1.5em;
+  cursor: pointer;
+}
+
+.option.disabled{
+  pointer-events: none;
+  background-color: black;
+}
+
+.hardwares{
+  margin-top: 1em;
+  height: 15em;
+  width: 50%;
+
+}
+
+.hardwares img{
+  height: 15em;
+  width: 100%;
+}
+
+.return-button{
+  margin-top: 1em;
+  width: 50%;
+  height: 2em;
+  border: 1px solid black;
+  padding: 1.5em 3em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+  .container-title {
+    margin-bottom: 1em;
+    font-size: .8rem;
+  }
+
+  .hardware-buttons {
+    margin-top: 1em;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .option-buttons{
+    width: 90%;
+  }
+
+  .option{
+    width: 100%;
+  }
+
+  .hardwares{
+    width: 80%;
+  }
+
+  .guide{
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 3em;
+  }
+
+
+  .computer-hardware{
+    margin: .5em 0;
+  }
+
+  .h-headphone img{
+    height: 12em;
+    width: 12em;
+    margin-top: 3em;
+  }
+
+  .hardware-description p{
+    font-size: 1rem;
+  }
+}
+
